@@ -3,11 +3,6 @@
 #include <unistd.h>
 #include <fstream>
 
-
-#include "vector.cpp"
-#include "maze.cpp"
-#include "menu.cpp"
-
 // Adding terminal interactivity depending on the OS (Mac currently not supported)
 #ifdef _WIN32
 #include <conio.h>
@@ -56,6 +51,10 @@ int kbhit()
     return byteswaiting;
 }
 #endif
+
+#include "vector.cpp"
+#include "maze.cpp"
+#include "menu.cpp"
 
 using namespace std;
 Maze maze;
